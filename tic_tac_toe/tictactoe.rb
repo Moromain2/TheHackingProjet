@@ -1,3 +1,5 @@
+#Réalisation à 3 : Antoine, Albert et Romain
+
 class Case
   attr_accessor :valeur
   def initialize(row, column)
@@ -28,6 +30,8 @@ class Tableau
   end
 
   def case_chose(row, column)
+    eval("@case#{row}#{column}.valeur = sign")
+  end
 
 end
 Tableau.new.grille
@@ -80,10 +84,13 @@ class Game
     tableau.grille
     choice = player1.sign
 
+    tableau.case_chose(choice[0], choice[1], player1.symbol)
+
     tableau.grille
     choice = player2.sign
 
-
+    tableau.case_chose(choice[0], choice[1], player2.symbol)
   end
 
 end
+tic_tac_toe = Game.new
