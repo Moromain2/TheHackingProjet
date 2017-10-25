@@ -1,0 +1,12 @@
+<h1>Éditer le gossip</h1>
+
+<%= form_tag gossip_path(@gossip), method: :put do %>
+
+  <%= label_tag 'anonymous_author', 'Pseudo' %>
+  <%= text_field_tag 'anonymous_author' %>
+
+  <%= label_tag 'content', 'Gossip' %>
+  <%= text_area_tag 'content' %>
+
+  <%= submit_tag "Modifier le Gossip"%>
+<% end %>

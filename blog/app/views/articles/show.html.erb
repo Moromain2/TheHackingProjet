@@ -1,0 +1,23 @@
+<h2> <%= @article.title %></h2>
+<p> <%= @article.text %></p>
+
+<h2>Commentaires de l'article</h2>
+
+<% @article.comments.each do |comment| %>
+  <p><b>De :</b> <%= comment.commenter %></p>
+  <p><b>Commentaire :</b> <%= comment.body %></p>
+<% end %>
+
+<h3>Ajouter un commentaire</h3>
+
+<%= form_tag article_comments_path(@article) do %>
+  <%= label_tag 'commenter', 'Pseudo' %>
+  <%= text_field_tag 'commenter' %>
+
+  <%= label_tag 'body', 'Commentaire' %>
+  <%= text_area_tag 'body' %>
+  <%= submit_tag "Commenter"%>
+<% end %>
+
+<p><%= link_to("Modifier l'article", edit_article_path) %></p>
+<p> <%= link_to("Revenir aux articles", articles_path) %></p>

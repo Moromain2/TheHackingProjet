@@ -1,0 +1,12 @@
+<h1>Nouvel article</h1>
+
+<%= form_tag (gossips_path) do %>
+
+  <%= label_tag 'anonymous_author', 'Pseudo' %>
+  <%= text_field_tag 'anonymous_author' %>
+
+  <%= label_tag 'content', 'Gossip' %>
+  <%= text_area_tag 'content' %>
+
+  <%= submit_tag "Nouveau Gossip"%>
+<% end %>

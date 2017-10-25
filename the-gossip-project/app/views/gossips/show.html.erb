@@ -1,0 +1,5 @@
+<h3>Gossip de <%= @gossip.anonymous_author %></h3>
+<h5>Gossip : <%= @gossip.content %></h5>
+
+<p><%= link_to('Modifier le gossip', edit_gossip_path) %></p>
+<p><%= link_to('Revenir aux gossips', gossips_path) %></p>

@@ -1,0 +1,2 @@
+class Gossips < ApplicationRecord
+end

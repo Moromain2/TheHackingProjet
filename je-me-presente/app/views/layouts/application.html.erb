@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <title>JeMePresente</title>
+    <%= csrf_meta_tags %>
+
+    <link rel="stylesheet" href="//cdn.rawgit.com/yegor256/tacit/gh-pages/tacit-css-1.1.1.min.css"/>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+
+    <ul>
+      <li><a href="<%= accueil_path %>">Home</a></li>
+      <li><a href="<%= profil_path(:jean) %>">Profil de Jean</a></li>
+      <li><a href="<%= profil_path(:romain) %>">Profil de Romain</a></li>
+      <li><a href="<%= contact_path %>">Contact</a></li>
+    </ul>
+
+    <%= yield %>
+
+    <%= render "layouts/footer" %>
+
+  </body>
+</html>
