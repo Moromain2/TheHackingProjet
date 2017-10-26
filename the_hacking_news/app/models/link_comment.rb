@@ -1,0 +1,2 @@
+class LinkComment < ApplicationRecord
+end
