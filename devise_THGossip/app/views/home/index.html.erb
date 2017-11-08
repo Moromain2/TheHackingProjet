@@ -1,0 +1,19 @@
+<h1>Welcome to the Gossip Project</h1>
+<ul>
+  <% if moussaillon_signed_in? %>
+
+    <li>
+      <%= link_to "Déconnexion", destroy_moussaillon_session_path, medhod: :delete %>
+    </li>
+
+  <% else %>
+
+    <li>
+      <%= link_to "Se connecter", new_moussaillon_session_path %>
+    </li>
+    <li>
+      <%= link_to "Créer un compte", new_moussaillon_registration_path %>
+    </li>
+
+  <% end %>
+</ul>
