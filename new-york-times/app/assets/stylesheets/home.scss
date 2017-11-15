@@ -1,0 +1,326 @@
+// Place all the styles related to the Home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@font-face {
+    font-family: 'nytcheltenhambookitalic';
+    src: url('cheltenham-italic-400-webfont.woff2') format('woff2'),
+         url('cheltenham-italic-400-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'nytcheltenhambolditalic';
+    src: url('cheltenham-italic-700-webfont.woff2') format('woff2'),
+         url('cheltenham-italic-700-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'nytcheltenhambook';
+    src: url('cheltenham-normal-400-webfont.woff2') format('woff2'),
+         url('cheltenham-normal-400-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'nytcheltenhambold';
+    src: url('cheltenham-normal-700-webfont.woff2') format('woff2'),
+         url('cheltenham-normal-700-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,700,700i|Libre+Franklin:400,700');
+
+/* ===== */
+
+$grey: #1e1e1e;
+$light-grey: #bcbcbc;
+$blue: #326891;
+
+html, body {
+  margin: 0;
+}
+
+#page {
+}
+
+header {
+  width: 100%;
+  display: grid;
+  grid-template-rows: 50px 60px;
+  grid-template-columns: 1fr;
+}
+
+#nav-bar {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  border-bottom: 1px solid $light-grey;
+  margin: auto 2%;
+  li {
+    list-style-type: none;
+    display: inline-block;
+    font-family: 'Franklin', sans-serif;
+    font-weight: 700;
+    font-size: .70em;
+    margin-left: 10px;
+    text-transform: uppercase;
+  }
+  li:nth-child(1) {
+    margin-left: 0;
+  }
+
+  #right-items {
+    a {
+      text-decoration: none;
+      color: #fff;
+      background-color: $blue;
+      padding: 5px 10px;
+      border-radius: 3px;
+    }
+  }
+}
+
+.logo {
+  width: 185px;
+  height: 26px;
+  background: url('nyt-logo-185x26.svg') center;
+  background-size: cover;
+  margin: auto;
+}
+
+#trending-articles {
+  height: 100px;
+  display: grid;
+  grid-template-rows: 100px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  -webkit-box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.75);
+}
+
+.top-article {
+  height: auto;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 2fr 3fr;
+  display: flex;
+  align-items: center;
+  font-family: 'Crimson', serif;
+  border-right: 1px solid $light-grey;
+  padding-right: 12px;
+  margin-top: 5px;
+  .number-top {
+    font-size: 1.2em;
+    font-weight: 700;
+    position: relative;
+    bottom: 10px;
+  }
+  p {
+    font-size: .85em;
+    margin-left: 15px;
+  }
+  img {
+    width: 50px;
+    margin-left: 10px;
+  }
+}
+
+#article {
+  border-top: 1px solid $grey;
+  padding: 10px 7%;
+  margin-top: 45px;
+  h4 {
+    padding: 0;
+    margin: 0 0 10px 0;
+    a {
+      text-transform: uppercase;
+      font-family: 'Franklin', sans-serif;
+      font-weight: 700;
+      text-decoration: none;
+      color: $grey;
+      font-size: .75em;
+    }
+  }
+  h1 {
+    font-family: 'NYTCheltenham';
+    font-style: italic;
+    font-size: 2.2em;
+    margin: 0 auto;
+    border-bottom: solid 1px $light-grey;
+    padding-bottom: 20px;
+  }
+  h3 {
+    font-family: 'Crimson', serif;
+    color: $grey;
+    font-size: 1.35em;
+  }
+  .author {
+    font-family: 'NYTCheltenham';
+    font-weight: 700;
+    font-size: .8em;
+    span {
+      font-weight: 400;
+    }
+  }
+  .big-image {
+    background: url('article-image-1.jpg') center;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+  }
+  .picture-legend {
+    color: $light-grey;
+    font-family: 'NYTCheltenham';
+    font-weight: 700;
+    font-size: .85em;
+    width: 55%;
+    span {
+      font-weight: 400;
+      font-size: .8em;
+    }
+  }
+  .article-text {
+    float: left;
+    font-family: 'Crimson', serif;
+    width: 55%;
+    font-weight: 400;
+    font-size: 1.15em;
+    a {
+      color: $blue;
+    }
+  }
+}
+
+#comments {
+  width: 30%;
+  font-family: 'Franklin', sans-serif;
+  float: right;
+  border-bottom: solid 1px $light-grey;
+  padding-bottom: 15px;
+  position: relative;
+  top: -950px;
+  h4 {
+    color: $blue;
+    text-transform: uppercase;
+    font-size: 0.8em;
+  }
+  .comment-info {
+    font-size: 0.8em;
+    font-weight: 900;
+    span {
+      font-weight: 400;
+    }
+  }
+  .comment-text {
+    font-weight: 200;
+    font-size: 0.8em;
+  }
+}
+
+.clear {
+  clear: both;
+  margin: 0;
+}
+
+#related {
+  padding: 0  7%;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 2fr 1fr;
+  #related-articles {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
+    h2 {
+
+    }
+    .related-article {
+      h3 {
+        font-family: 'Franklin', sans-serif;
+        color: $grey;
+        font-size: .7em;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin: 0 auto 5px;
+      }
+      p {
+        font-family: 'NYTCheltenham';
+        font-size: 1.1em;
+        margin: 0 10px 0 0;
+      }
+      img {
+        margin-bottom: 10px;
+      }
+    }
+  }
+  #trending {
+    h3 {
+      font-family: 'Franklin', sans-serif;
+      color: $blue;
+      font-weight: 700;
+      font-size: .85em;
+      text-transform: uppercase;
+    }
+    .trending-topic {
+      display: grid;
+      grid-template-rows: auto;
+      grid-template-columns: 1fr 3fr 2fr;
+      display: flex;
+      align-items: center;
+      font-family: 'Crimson', serif;
+      font-size: 1em;
+      color: $blue;
+      border-bottom: 1px solid $light-grey;
+      img {
+        width: 40px;
+        margin-left: 10px;
+      }
+      .topic-number {
+        font-size: 1.35em;
+        color: $grey;
+        font-weight: 700;
+        position: relative;
+        bottom: 10px;
+      }
+      p {
+        margin-left: 10px;
+      }
+    }
+  }
+}
+
+footer {
+  margin-top: 30px;
+  border-top: 1px solid $light-grey;
+  padding: 30px 7%;
+  display: grid;
+  grid-template-rows: 30px auto;
+  .logo {
+    float: left;
+  }
+  #links {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    li {
+      list-style-type: none;
+      font-family: 'Franklin', sans-serif;
+      font-size: .9em;
+    }
+    .main-category {
+      text-transform: uppercase;
+      font-weight: 700;
+      margin-bottom: 15px;
+    }
+  }
+}

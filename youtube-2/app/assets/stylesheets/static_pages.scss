@@ -1,0 +1,267 @@
+// Place all the styles related to the static_pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+$red: #ff0000;
+$light-grey: #eeeeee;
+$grey: #9c9c9c;
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.line {
+  height: 2px;
+  width: 17px;
+  background-color: #000;
+  position: relative;
+}
+
+.line:nth-child(2) {
+  top: 0.2rem;
+}
+
+.line:nth-child(3) {
+  top: 0.4rem;
+}
+
+#burger {
+  margin-left: 30px;
+  display: inline-block;
+}
+
+#logo {
+  width: 80px;
+  height: 24px;
+  background: url('logo-youtube.png') no-repeat center;
+  background-size: cover;
+  display: flex;
+  float: left;
+    p {
+      position: relative;
+      left: 77px;
+      font-size: 0.65em;
+    }
+}
+
+#profile {
+  width: 30px;
+  height: 30px;
+  background-color: #6ca545;
+  border-radius: 50px;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 30px;
+  font-weight: 300;
+}
+
+#buttons {
+  float: right;
+}
+
+#profile {
+  float: right;
+}
+
+nav form {
+  float: left;
+  margin-left: 30px;
+}
+
+nav {
+  width: 100%;
+  display: block;
+  background-color: #FFF;
+  height: 56px;
+  line-height: 30px;
+  -webkit-box-shadow: 0px 1px 6px 2px rgba(0,0,0,0.25);
+  -moz-box-shadow: 0px 1px 6px 2px rgba(0,0,0,0.25);
+  box-shadow: 0px 1px 6px 2px rgba(0,0,0,0.25);
+  #buttons {
+    display: inline-block;
+  }
+}
+
+#burger {
+  float: left;
+}
+
+#video {
+  width: 66%;
+  float: left;
+  margin-top: 50px;
+    h3 {
+      font-weight: 500;
+      font-size: 1.4em;
+      margin-left: 140px;
+    }
+}
+
+#player {
+  width: 100%;
+  text-align: center;
+}
+
+.views {
+  margin-left: 140px;
+}
+
+#likes {
+  display: flex;
+  margin-left: 125px;
+}
+
+#interactions {
+  display: flex;
+  margin-left: 50px;
+}
+
+#video-stats {
+  display: flex;
+    border-bottom: solid 1px $light-grey;
+    width: 66%;
+    margin-left: 140px;
+    padding-bottom: 14px;
+    margin-bottom: 30px;
+}
+
+#related {
+  width: 33%;
+  float: left;
+  margin-top: 50px;
+}
+
+.material-icons {
+  margin-left: 20px;
+}
+
+#profile-pic {
+  background: url('cartman.jpg') center;
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+}
+
+#infos {
+  float: left;
+  margin-left: 140px;
+    p {
+      display: block;
+    }
+}
+
+#added {
+  font-size: .7em;
+}
+
+#submit {
+  background-color: red;
+  padding: 10px 16px;
+  color: #FFF;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  border-radius: 2px;
+  float: right;
+  right: 145px;
+  position: relative;
+  bottom: 80px;
+    span {
+      opacity: .7;
+    }
+}
+
+#description {
+  font-size: .95em;
+}
+
+#toggle-button {
+  width: 15px;
+  height: 15px;
+  border-radius: 30px;
+  background-color: #39b1e5;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.25);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.25);
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.25);
+  position: relative;
+  left: 15px;
+}
+
+#toggle-bar {
+  width: 30px;
+  height: 8px;
+  border-radius: 25px;
+  background-color: #8ad2f2;
+  position: relative;
+  bottom: 12px;
+  z-index: -1;
+}
+
+.related-video {
+  border-bottom: 1px solid $light-grey;
+  padding-bottom: 10px;
+  height: 100px;
+  margin-top: 15px;
+  img {
+    width: 39%;
+    float: left;
+  }
+  a {
+    text-decoration: none;
+  }
+}
+
+.thumb-info {
+  width: 60%;
+  float: right;
+}
+
+.user-name {
+  font-size: .8em;
+}
+
+.views {
+  font-size: .75em;
+}
+
+.see-more {
+  display: none;
+}
+
+#more-videos {
+  text-align: center;
+  color: $grey;
+  background-color: $light-grey;
+  text-transform: uppercase;
+  border-radius: 3px;
+  margin-top: 20px;
+  padding: 7px;;
+}
+
+#comments {
+  position: absolute;
+  top: 730px;
+  margin-left: 140px;
+}
+
+#comment-new {
+  input {
+    border: none;
+    border-bottom: 1px solid $light-grey;
+    width: 100%;
+    padding: 7px;
+    margin-bottom: 20px;
+    font-size: 1.1em;
+    color: $grey;
+    font-weight: 300;
+  }
+}
+
+#comments-infos {
+  p {
+    float: left;
+  }
+}
