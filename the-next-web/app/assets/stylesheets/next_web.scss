@@ -1,0 +1,98 @@
+// Place all the styles related to the next_web controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+// === FONTS ===
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700,900|Yanone+Kaffeesatz:300,400,700');
+
+
+// === COLORS ===
+
+$orange: #FC462F;
+$light-roange: #FFF4F3;
+$black: #131313;
+$light-grey: #B6B6B6;
+$bg-color: #F3F3F3;
+
+
+// === FIX ===
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: $bg-color;
+}
+
+// === TOP NAVBAR ===
+
+nav {
+  display: grid;
+  grid-template-rows: 30px 40px;
+  grid-template-columns: 1fr;
+  background-color: #1e1e1e1e;
+  li {
+    list-style-type: none;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .top-navbar {
+    background-color: $black;
+    color: rgba(255,255,255,.6);
+    font-size: .7em;
+    line-height: 10px;
+  }
+  .bottom-navbar {
+    background-color: #fff;
+    color: $light-grey;
+    font-size: 1.15em;
+    text-transform: uppercase;
+    line-height: 3px;
+    border-bottom: 1px solid black;
+    .right-items {
+      position: relative;
+      bottom: 5px;
+    }
+    .left-items {
+      li {
+        margin-right: 30px;
+      }
+    }
+    li {
+      font-family: 'Yanone Kaffeesatz', sans-serif;
+    }
+  }
+  .left-items {
+    li {
+      float: left;
+      margin-right: 10px;
+      span {
+        color: #fff;
+      }
+    }
+  }
+  .right-items {
+    padding-right: 50px;
+    li {
+      float: right;
+      margin-left: 10px;
+    }
+  }
+}
+
+
+// === NEWS SHOWCASE ===
+
+.news-container {
+  margin: 20px 10px;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 2fr 1fr;
+  img {
+    width: 100%;
+  }
+  .right-news {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
+
+h1 {
+  font-size: 2.6em;
+  font-weight: 300;
+  font-family: 'Open Sans', 'Helvetica', sans-serif;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#slider {
+  width: 1100px;
+  height: 500px;
+  overflow: hidden;
+  margin: auto;
+}
+
+#slides {
+  width: 5500px;
+  height: 500px;
+  margin: 0;
+  padding: 0;
+}
+
+.slide {
+  list-style-type: none;
+}
+
+.slide img {
+  float: left;
+}
+
+#buttons {
+  font-family: 'Open Sans', 'Helvetica', sans-serif;
+  font-weight: 400;
+  text-align: center;
+}
+
+#buttons p {
+  margin-top: 5px;
+}

@@ -1,0 +1,2 @@
+module NextWebHelper
+end

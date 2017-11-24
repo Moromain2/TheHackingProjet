@@ -1,0 +1,54 @@
+
+body {
+  background-color: #efefef;
+  cursor: url('hand.jpeg'), auto;
+}
+
+h1 {
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.simon {
+  width: 400px;
+  height: 400px;
+  margin: auto;
+  border: 15px solid #cccccc;
+  border-radius: 300px;
+  margin-top: 80px;
+  -webkit-box-shadow: 0px 0px 3px 1px rgba(92,92,92,0.6);
+  -moz-box-shadow: 0px 0px 3px 1px rgba(92,92,92,0.6);
+  box-shadow: 0px 0px 3px 1px rgba(92,92,92,0.6);
+}
+
+.red,
+.blue,
+.green,
+.yellow {
+  width: 50%;
+  height: 50%;
+}
+
+.red {
+  background-color: #ff522b;
+  border-radius: 300px 0 0 0;
+  float: left;
+}
+
+.blue {
+  background-color: #199fff;
+  float: left;
+  border-radius: 0 0 0 300px;
+}
+
+.yellow {
+  background-color: #ffd344;
+  margin-left: 50%;
+  border-radius: 0 0 300px 0;
+}
+
+.green {
+  background-color: #71c160;
+  margin-left: 50%;
+  border-radius: 0 300px 0 0;
+}
